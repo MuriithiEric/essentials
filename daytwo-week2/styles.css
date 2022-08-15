@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(27, 27, 27);
+}
+.container {
+  display: flex;
+  justify-content: center; /* center the container or card in the middle of the screen */
+  flex-wrap: wrap; /* wrap the cards in the container, essentially, the contents of the container and teh card become reponsive and change according to the size of the screen */
+}
+
+.card {
+  background-color: white;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image {
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover; /* cover the image to the card */
+  border-radius: 15px 15px 0 0; /* gives us some nice, rounded corners on the card */
+}
+
+.car-1 {
+  background-image: url("https://images.unsplash.com/photo-1635504303506-45e139efbf4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+}
+
+.car-2 {
+  background-image: url("https://images.unsplash.com/photo-1520031441872-265e4ff70366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=802&q=80");
+}
+
+.car-3 {
+  background-image: url("https://images.unsplash.com/photo-1610192804837-fb021b82b54c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05); /* scale the card up when the user hovers over it */
+  transition: all 0.5s ease-in-out; /* make the card transition when the user hovers over it */
+}

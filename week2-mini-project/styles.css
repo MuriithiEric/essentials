@@ -1,0 +1,25 @@
+.card img {
+  width: 350px;
+  height: 300px;
+  top: 240;
+  left: 200;
+  height: auto;
+  float: left;
+  padding: 15px;
+  width: 33%;
+  display: flex;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(13, 29, 167, 0.463);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image1 {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
